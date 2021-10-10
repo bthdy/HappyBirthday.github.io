@@ -7,12 +7,12 @@
         $(function(){
              name = $.query.get("name");
              url = "http://winnie2007.gitee.io/HappyBirthday/?name="+name;
-
+             jump1();
         });
+            function jump1(){
+            url = "b.html?name="+name+"&age="+age;//此处拼接内容
+            window.location.href = url;
+        }
 </scrip>
 </head>
-<script language="javascript" type="text/javascript"> 
-
-window.location.href=url;
-</script>
 </html>
